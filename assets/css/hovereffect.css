@@ -1,0 +1,116 @@
+/*!
+ * hovereffect.css
+ * Custom hovereffects
+ */
+
+/*
+ * Main style
+ */
+
+.hovereffect {
+  width:100%;
+  height:100%;
+  float:left;
+  overflow:hidden;
+  position:relative;
+  text-align:center;
+  cursor:default;
+}
+
+.hovereffect .overlay {
+  width:100%;
+  position:absolute;
+  left:0;
+  background-color:rgba(0,0,0,0.5);
+  -webkit-transition:all .4s ease-in-out;
+  transition:all .4s ease-in-out
+}
+
+.hovereffect img {
+  display:block;
+  position:relative;
+  -webkit-transition:all .2s linear;
+  transition:all .2s linear;
+}
+
+.hovereffect h2 {
+  text-decoration:none;
+  text-align: center;
+  display:inline-block;
+  color:#fff;
+}
+
+.hovereffect:hover img {
+  -ms-transform:scale(1.2);
+  -webkit-transform:scale(1.2);
+  transform:scale(1.2);
+}
+
+/* Hovereffect for top-project (projects in the index jumbotron) */
+
+.top-project .overlay {
+  height:100%;
+  overflow:hidden;
+  top:0;
+  opacity: 0;
+}
+
+.top-project h2 {
+  -webkit-transition:all .1s ease-in-out;
+  transition:all .1s ease-in-out;
+  position:absolute;
+  left: 12px;
+  bottom: 5px;
+  padding:5px 10px;
+  margin-right: 12px;
+  border: 1px solid rgb(145, 145, 145);
+  font-size: 1.5em;
+}
+
+.top-project h2:hover {
+  color:#bfbfbf;
+}
+
+.top-project:hover .overlay {
+opacity:1;
+filter:alpha(opacity=100);
+}
+
+.top-project:hover h2 {
+opacity:1;
+filter:alpha(opacity=100);
+-ms-transform:translatey(0);
+-webkit-transform:translatey(0);
+transform:translatey(0);
+}
+
+/* Hovereffect for top-article (last articles in the jumbotron above the articles list) */
+
+.top-article .overlay {
+  overflow: visible;
+  opacity: 1;
+  height: 100px;
+  top: auto;
+  bottom: 0;
+}
+
+.top-article h2 {
+  border: none;
+  text-align: justify;
+  font-size: 1.2em;
+  position: absolute;
+  left: 5%;
+  padding-right: 10%;
+}
+
+.top-article p {
+  padding: none;
+  position: absolute;
+  left: 5%;
+
+}
+
+@media (max-width: 650px) {
+  .top-article h2 {
+  }
+}
