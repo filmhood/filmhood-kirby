@@ -95,7 +95,7 @@ body p {
 
 article {
   background-color: rgb(250, 250, 250);
-  padding: 5px 30px 5px 30px;
+  padding: 5px 30px 15px 30px;
   margin-bottom: 10px;
   border-left: 2px solid rgb(158, 158, 158);
 }

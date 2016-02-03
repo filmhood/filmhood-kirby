@@ -33,7 +33,8 @@
         <h4><?php echo $project->author() ?>&nbsp;/
           <?php echo $project->tags() ?>
         </h4>
-        <p><img src="<?php echo $project->url() ?>/vignette.png" alt="vignette" /></p>
+        <p><?php echo $project->text()->kirbytext()->excerpt(300) ?></p>
+        <p class="articles-plus"><a href="<?php echo $project->url() ?>">Voir le projet -></a></p>
       </article>
       <?php endforeach ?>
     </div>

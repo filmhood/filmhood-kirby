@@ -43,6 +43,7 @@
           <?php echo $article->tags() ?>
         </h4>
         <p><?php echo $article->text()->kirbytext()->excerpt(300) ?></p>
+        <p class="articles-plus"><a href="<?php echo $article->url() ?>">Lire l'article -></a></p>
       </article>
       <?php endforeach ?>
     </div>
