@@ -8,8 +8,9 @@
 
   <?php snippet('article-author') ?>
 
-  <div class="row" style="margin-top:30px;">
-    <div class="col-md-8 col-md-offset-2">
+  <div class="row">
+    <?php snippet('share') ?>
+    <div class="col-md-8">
       <article class="new">
         <?php echo $page->text()->kirbytext() ?>
       </article>

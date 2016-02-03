@@ -20,9 +20,8 @@
     </div>
   </div>
   <div class="row text-center">
-    <div class="col-md-2 col-md-offset-3 flat-button light-flat"><a href="<?php echo url('blog'); ?>">Actualité</a></div>
-    <div class="col-md-2 flat-button light-flat"><a href="#">Adhérer</a></div>
-    <div class="col-md-2 flat-button light-flat"><a href="#">Membres</a></div>
+    <div class="col-md-3 col-md-offset-3 flat-button light-flat"><a href="<?php echo url('blog'); ?>">actualité</a></div>
+    <div class="col-md-3 flat-button light-flat"><a href="#">contact</a></div>
   </div>
 </div>
 

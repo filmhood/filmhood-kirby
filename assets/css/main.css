@@ -125,6 +125,11 @@ article p.articles-plus {
   padding: 6px 20px 8px 20px;
   background-color: #cc161c;
   border: 1px solid #9e2e23;
+  text-decoration: none;
+}
+
+.articles-all a:hover {
+  color: rgb(191, 191, 191);
 }
 
 article a {

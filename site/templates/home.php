@@ -35,10 +35,10 @@
           <?php echo $article->tags() ?>
         </h4>
         <p><?php echo $article->text()->kirbytext()->excerpt(300) ?></p>
-        <p class="articles-plus"><a href="<?php echo $article->url() ?>">Lire l'article -></a></p>
+        <p class="articles-plus"><a href="<?php echo $article->url() ?>">lire l'article -></a></p>
       </article>
       <?php endforeach ?>
-      <p class="articles-all"><a href="<?php echo url('articles') ?>">Tous les articles</a></p>
+      <p class="articles-all"><a href="<?php echo url('articles') ?>">tous les articles</a></p>
     </div>
   </div>
 
@@ -54,7 +54,7 @@
         <p><?php echo $new->text()->kirbytext()->excerpt(300) ?></p>
       </article>
       <?php endforeach ?>
-      <p class="articles-all"><a href="<?php echo url('blog') ?>">Toutes les actualités</a></p>
+      <p class="articles-all"><a href="<?php echo url('blog') ?>">toutes les actualités</a></p>
     </div>
   </div>
 </div>
