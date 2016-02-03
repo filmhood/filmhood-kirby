@@ -139,13 +139,13 @@ article a:hover { 
 article img {
   max-width: 110%;
   margin-left: -5%;
-  padding: 30px 0 40px 0;
+  padding: 20px 0 20px 0;
 }
 
 /* Blog article */
 
 article.new {
-  padding: 30px 34px 30px 34px;
+  padding: 10px 34px 20px 34px;
   border: none;
 }
 
