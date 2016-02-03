@@ -1,6 +1,6 @@
 <?php snippet('header') ?>
 
-<div class="jumbotron no-margin custom-background" style="background-image:url(<?php if($image = $page->image('cover.png')) { echo $image->url(); } ?>);">
+<div class="jumbotron no-margin custom-background" style="background-image:url(<?php if($image = $page->image('cover.jpg')) { echo $image->url(); } ?>);">
   <div class="container text-center">
     <p>&nbsp;</p>
     <h1><img src="<?php echo url('assets/images/logo-filmhood-small.png') ?>" class="logo-small-title" alt="logo-filmhood" />filmhood</h1>

@@ -39,7 +39,7 @@
 
       <article style="border-color:<?php echo $bordercolor; ?>;">
         <h1><a class="categorie" href="<?php echo $article->url() ?>"><?php echo $article->title() ?></a></h1>
-        <h4>Luca Mailhol&nbsp;/
+        <h4><?php echo $article->author() ?>&nbsp;/
           <?php echo $article->tags() ?>
         </h4>
         <p><?php echo $article->text()->kirbytext()->excerpt(300) ?></p>

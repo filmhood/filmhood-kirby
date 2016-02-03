@@ -7,7 +7,7 @@
       <?php foreach(page('projects')->children()->visible()->limit(4) as $project): ?>
       <div class="col-xs-6 col-sm-3 custom-padding">
         <div class="hovereffect top-project">
-          <a href="<?php echo $project->url() ?>"><img src="<?php echo $project->url() ?>/vignette.png" class="img-responsive" alt="Responsive image">
+          <a href="<?php echo $project->url() ?>"><img src="<?php echo $project->url() ?>/vignette.jpg" class="img-responsive" alt="Responsive image">
           <div class="overlay">
             <h2><?php echo $project->title() ?></h2>
           </div>
