@@ -149,6 +149,10 @@ article.new {
   border: none;
 }
 
+article h3 {
+  margin-bottom: 0px;
+}
+
 /* Article's author */
 
 .author {

@@ -31,7 +31,7 @@
 
       <article style="border-color:<?php echo $bordercolor; ?>;">
         <h1><a class="categorie" href="<?php echo $article->url() ?>"><?php echo $article->title() ?></a></h1>
-        <h4>Luca Mailhol&nbsp;/
+        <h4><?php echo $article->author() ?>&nbsp;/
           <?php echo $article->tags() ?>
         </h4>
         <p><?php echo $article->text()->kirbytext()->excerpt(300) ?></p>
@@ -50,9 +50,7 @@
       <?php foreach(page('blog')->children()->visible()->limit(4) as $new): ?>
       <article>
         <h1><a class="categorie think" href="<?php echo $new->url() ?>"><?php echo $new->title() ?></a></h1>
-        <h4>Luca Mailhol&nbsp;/
-          <?php echo $new->tags() ?>
-        </h4>
+        <h4><?php echo $new->author() ?></h4>
         <p><?php echo $new->text()->kirbytext()->excerpt(300) ?></p>
       </article>
       <?php endforeach ?>

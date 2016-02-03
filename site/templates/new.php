@@ -10,7 +10,7 @@
 
   <div class="row" style="margin-top:30px;">
     <div class="col-md-8 col-md-offset-2">
-      <article>
+      <article class="new">
         <?php echo $page->text()->kirbytext() ?>
       </article>
     </div>

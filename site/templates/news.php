@@ -9,7 +9,7 @@
     <?php foreach(page('blog')->children()->visible() as $new): ?>
     <article>
       <h1><a class="categorie think" href="<?php echo $new->url() ?>"><?php echo $new->title() ?></a></h1>
-      <h4>Luca Mailhol <span class="label label-default">Default</span>&nbsp;<span class="label label-default">Default</span></h4>
+      <h4><?php echo $new->author() ?></h4>
       <p><?php echo $new->text()->kirbytext()->excerpt(300) ?></p>
     </article>
     <?php endforeach ?>
